@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Calculator - Douglas(2020338) & Keith(2020353)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body background="images/bg.jpg">
+    <main>
+        <h1 id="app-title">Electricity Calculator</h1>
+        <div id="form-holder">
+            <div id="main-box">
+                <div class="image">
+                    <img src="images/img.png" />
+                </div>
+                <div>
+                    <h3>Please, type in the details and press 'Calculate bill'</h3>
+                </div>
+                <form id="calculate-bill-form">
+                    <div class="form-item">
+                        <label for="electricity-units"><b>Number of Units</b></label>
+                        <input type="number" step="any" min="1" name="electricity-units" id="electricity-units"
+                            class="input-item text-right" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="billing-period"><b>Billing Period</b> <small>(days)</small></label>
+                        <input type="number" step="any" min="1" name="billing-period" id="billing-period"
+                            class="input-item text-right" required>
+                    </div>
+                    <div class="form-item">
+                        <button class="btn-block" id="calculate-btn" type="submit">Calculate bill</button>
+                        <button class="btn-block" id="reset-btn" type="reset">Reset</button>
+                    </div>
+                </form>
+                <table id="result">
+                    <label id="table-title"><b> Billing details: </b></label>
+                    <tbody>
+                        <tr>
+                            <td class=""><b>Total Amount (excl. VAT)</b></td>
+                            <td class="text-right" id="total-less-vat"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>VAT in this bill</b></td>
+                            <td class="text-right" id="vat"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>Total Payable (incl. VAT)</b></td>
+                            <td class="text-right" id="total-pay"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
