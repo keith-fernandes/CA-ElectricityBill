@@ -34,3 +34,7 @@ window.onload = function() {
             document.getElementById('reset-btn').style.display = 'none';
     })
 }
+
+function fullscreenAlert(){
+alert("This application will work better in full screen. Enjoy it.");
+}

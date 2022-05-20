@@ -1,0 +1,10 @@
+{
+    "name": "electricitybill",
+    "version": "1.0.0",
+    "main": "index.html",
+    "dependencies": {
+        "async": "^2.1.4",
+        "nwbuild": "^0.0.5",
+        "osenv": "^0.1.4"
+    }
+}
