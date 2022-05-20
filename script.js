@@ -1,5 +1,6 @@
 //Executes when load
 window.onload = function() {
+    alert("This application will work better in full screen. Enjoy it.");
     const billForm = document.getElementById('calculate-bill-form')
     billForm.addEventListener('submit', function(e) {
         e.preventDefault()
@@ -17,7 +18,7 @@ window.onload = function() {
         totalPayable = parseFloat(totalLessVat) + parseFloat(totalLessVat)* vat/100;
 
         //displays the result table with the billing information
-        document.getElementById('total-less-vat').textContent = "€ " + parseFloat(totalLessVat).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 })
+            document.getElementById('total-less-vat').textContent = "€ " + parseFloat(totalLessVat).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 })
             document.getElementById('total-pay').textContent = "€ " + parseFloat(totalPayable).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 })
             document.getElementById('vat').textContent = "€ " + parseFloat(parseFloat(totalLessVat)* vat/100).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2 })
             document.getElementById('table-title').style.display = 'block';
@@ -35,6 +36,6 @@ window.onload = function() {
     })
 }
 
-function fullscreenAlert(){
-alert("This application will work better in full screen. Enjoy it.");
-}
+// function fullscreenAlert(){
+
+// }
